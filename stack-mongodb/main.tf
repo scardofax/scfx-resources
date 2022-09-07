@@ -5,7 +5,7 @@ resource "mongodbatlas_project" "default" {
 
 resource "mongodbatlas_project_ip_access_list" "default" {
   project_id = mongodbatlas_project.default.id
-  ip_address = "0.0.0.0"
+  cidr_block = "0.0.0.0/0"
   comment    = "public ip address"
 }
 
