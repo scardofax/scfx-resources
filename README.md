@@ -1,0 +1,2 @@
+# scfx-resources
+Resources terraform
